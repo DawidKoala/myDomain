@@ -1,158 +1,187 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Work Experience</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #333;
-                color: #fff;
-                margin: 0;
-                padding: 0;
-            }
+<head>
+    <title>Work Experience</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Dark background color */
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
 
-            header {
-                background-color: #222;
-                padding: 20px;
-                text-align: center;
-            }
+        header {
+            background-color: #24292e; /* GitHub-like header background color */
+            padding: 20px;
+            text-align: center;
+        }
 
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            color: #fff;
+        }
+
+        nav {
+            background-color: #444; /* Dark navigation bar background color */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 8px 16px;
+            border: 1px solid #888;
+            background-color: #555;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #444;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #444; /* Light gray background for content */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for the content area */
+            position: relative; /* Position the section element */
+            top: 20px; /* Adjust the value to move it lower */
+        }
+
+        h2 {
+            font-size: 26px; /* Larger header font size for h2 */
+            color: #fff;
+        }
+
+        h3 {
+            font-size: 18px; /* Smaller header font size for h3 */
+            color: #fff;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 14px;
+        }
+
+        li {
+            margin: 10px 0;
+            font-size: 14px; /* Larger font size for content */
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 768px) {
             header h1 {
-                font-size: 32px;
-                margin: 0;
-            }
-
-            nav {
-                background-color: #444;
-                padding: 10px 0;
-                text-align: center;
+                font-size: 30px; /* Slightly smaller for smaller screens */
             }
 
             nav ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
+                display: block;
             }
 
             nav li {
-                display: inline;
-                margin: 0 20px;
-            }
-
-            a {
-                text-decoration: none;
-                color: #fff;
-                font-weight: bold;
-                padding: 10px 20px;
-                border: 2px solid #888;
-                background-color: #555;
-                border-radius: 5px;
-                transition: background-color 0.3s;
-            }
-
-            a:hover {
-                background-color: #444;
-            }
-
-            section {
-                padding: 20px;
-                max-width: 800px; /* Limit content width on larger screens */
-                margin: 0 auto; /* Center content horizontally */
-            }
-
-            section h2 {
-                font-size: 24px;
-            }
-
-            section ul {
-                list-style: disc;
-                padding-left: 20px;
-            }
-
-            section li {
+                display: block;
                 margin: 10px 0;
             }
 
-            /* Responsive styles for smaller screens */
-            @media (max-width: 768px) {
-                header h1 {
-                    font-size: 24px;
-                }
-
-                nav ul {
-                    display: block;
-                }
-
-                nav li {
-                    display: block;
-                    margin: 10px 0;
-                }
-
-                a {
-                    padding: 10px 20px;
-                }
-
-                section {
-                    padding: 10px;
-                }
-
-                section h2 {
-                    font-size: 20px;
-                }
+            a {
+                padding: 10px 20px;
             }
-        </style>
-    </head>
 
-    <body>
-        <header>
-            <h1>My Work Experience</h1>
-        </header>
+            section {
+                padding: 10px;
+            }
 
-        <nav>
-            <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="experience.html">Work Experience</a></li>
-                <li><a href="contactInfo.html">Contact Information</a></li>
-            </ul>
-        </nav>
+            h2 {
+                font-size: 24px; /* Smaller font size for h2 on smaller screens */
+            }
 
-        <section id="experience">
-            <h2>Work Experience<br></h2>
+            h3 {
+                font-size: 20px; /* Smaller font size for h3 on smaller screens */
+            }
 
-            <h3>Senior IT Analyst at Nordea (Jan 2023 - Present)</h3>
+            li {
+                font-size: 16px; /* Smaller font size for content on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Work Experience</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="main.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="experience.html">Work Experience</a></li>
+            <li><a href="contactInfo.html">Contact Information</a></li>
+        </ul>
+    </nav>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+
+        <h3>Senior IT Analyst at Nordea (Jan 2023 - Present)</h3>
+        <ul>
             <li>IT Ops on 2 projects</li>
             <li>Responsible for maintaining continuity of daily operations and monitoring</li>
             <li>Deployment of new releases on Production and PreProduction environments</li>
             <li>Simple MSSQL/Oracle databases operations</li>
             <li>Automation of all daily processes</li>
             <li>Part of Scrum driven teams</li>
-            <li>Working close with business and developers</li><br>
+            <li>Working closely with business and developers</li>
+        </ul>
 
-            <h3>Team Lead in SaaS Monitoring/Associate SaaS Technician at Banqsoft (Jan 2021 - Dec 2022)</h3>
+        <h3>Team Lead in SaaS Monitoring/Associate SaaS Technician at Banqsoft (Jan 2021 - Dec 2022)</h3>
+        <ul>
             <li>Maintaining service continuity of delivered applications and automations</li>
             <li>Automation of several processes and monitoring</li>
-            <li>Monitoring of services, applications and automations</li>
+            <li>Monitoring of services, applications, and automations</li>
             <li>Deployment of new application versions in various environments (from Test to Production)</li>
             <li>Part of projects enrolling new customers</li>
-            <li>Technical based communication with customers regarding provided solutions, automations and monitoring</li>
+            <li>Technical-based communication with multiple customers regarding provided solutions, automations, and monitoring</li>
             <li>Technical Account Manager role for 2 customers</li>
             <li>Configuration and setup of monitoring</li>
-            <li>Team Lead for SaaS Monitoring team</li><br>
+            <li>Team Lead for SaaS Monitoring team</li>
+        </ul>
 
-            <h3>SD IT Administrator L1 at Wipro Limited (Sep 2019 - Dec 2020)</h3>
-            <li>SD Administrator on 1st line of IT Support in project Novartis</li><br>
+        <h3>SD IT Administrator L1 at Wipro Limited (Sep 2019 - Dec 2020)</h3>
+        <ul>
+            <li>SD Administrator on 1st line of IT Support in project Novartis</li>
+        </ul>
 
-            <h3>L2 End User Support Specialist at Hemmersbach (Oct 2018 - Sep 2019)</h3>
+        <h3>L2 End User Support Specialist at Hemmersbach (Oct 2018 - Sep 2019)</h3>
+        <ul>
             <li>Local IT and second line of IT support for EMEA region in project IBM-StateStreet</li>
-            <li>Remote and local user support for banking sector with all installation, configuration and application issue solving break-fix</li>
+            <li>Remote and local user support for the banking sector with all installation, configuration, and application issue-solving (break-fix)</li>
             <li>Partial Active Directory groups management</li>
             <li>Troubleshooting and solving all of the applications and issues/external devices in Windows</li>
-            <li>Using tools as remotecontrol, remote desktop connection, ServiceNOW, Active Directory, ADTool, SMS tool, SCCM, VMWare, VSphere, Virtual Desktop Infrastructure (VDI), Citrix Director etc.</li>
-            <li>Hardware and software configuration for new hires and current users related with location</li>
+            <li>Using tools such as remote control, remote desktop connection, ServiceNOW, Active Directory, ADTool, SMS tool, SCCM, VMWare, VSphere, Virtual Desktop Infrastructure (VDI), Citrix Director, etc.</li>
+            <li>Hardware and software configuration for new hires and current users related to the location</li>
             <li>Deskside/onsite support of over 1500 users</li>
             <li>Multitasking and work with SLA's and customer satisfaction</li>
-        </section>
-    </body>
+        </ul>
+
+    </section>
+</body>
 </html>
